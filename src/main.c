@@ -101,7 +101,6 @@ ISR(TIMER2_OVF_vect) {
 
 ISR(TIMER1_COMPA_vect){
 	timer1_count++;
-
 	if(led0_count != 0){ // blink led0 five times
 		setLedOn(LED0);
 		if(++led0_count > 5){
