@@ -1,5 +1,5 @@
 # SIMAVR_Timer_Heartbeat
-This is a program that uses simavr to simulate an atmega238p and manipulates 2 gpio pins using a the builtin timers. I am visiting my parents right now and I didn't have any microcontrollers lying around, so I used simavr to simulate an atmega328p mcu. I used the built in 16 bit timer timer1 as well as the 8 bit timers to turn the led's off after 30ms.
+This is a program that uses simavr to simulate an atmega238p and manipulates 2 gpio pins using the builtin timers. I am visiting my parents right now and I didn't have any microcontrollers lying around, so I used simavr to simulate an atmega328p mcu. I used the built in 16 bit timer timer1 as well as the 8 bit timers to turn the led's off after 30ms.
 
 Using the atmega328p timer interrupts, this approach is very fast and performant, but the execution time of the interrupt handler as well as potential variability of when multiple interrupts are handled could cause a non-deterministic delay. If determinism was super important, some other approaches would be to use an RTOS or use the timer specific gpio pins to control the led's directly through hardware. 
 
