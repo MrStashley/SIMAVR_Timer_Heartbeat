@@ -62,7 +62,7 @@ void stopTimer2(void){
 
 void timer1_init(void) {
 	TCCR1A = 0;
-	TCCR1B = (1 << WGM12) | (1 << CS11) | (1 << CS10); 	//Configure CTC mode, no prescaler
+	TCCR1B = (1 << WGM12) | (1 << CS11) | (1 << CS10); 	//Configure CTC mode, prescaler of 64
 	OCR1A = TIMER_COMP_TIME; 		// Set Output Compare Register A to trigger interrupt every 65000 counts
 	TCNT1 = 0;				// initialize timer counter
 	TIMSK1 |= (1 << OCIE1A); 		// enable timer interrupt
