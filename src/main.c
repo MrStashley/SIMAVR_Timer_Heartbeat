@@ -112,7 +112,7 @@ ISR(TIMER1_COMPA_vect){
 	// blink led1
 	setLedOn(LED1);
 	if((timer1_count) % TIMER1_COUNT_3_SEC == 0 && led0_count == 0) {
-		// proc every 3 seconds after timer reaches 65000
+		// proc every 3 seconds
 		// start led0 procedure
 		led0_count++;
 		setLedOn(LED0);
