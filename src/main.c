@@ -2,8 +2,8 @@
 #include <avr/interrupt.h>
 
 #define BAUD 9600
-#define TIMER1_COUNT_3_SEC 12
-#define TIMER_COUNT_30_MS 30
+#define TIMER1_COUNT_3_SEC 12  // F_CPU / 64 / TIMER_COMP_TIME * 3
+#define TIMER_COUNT_30_MS 30   // F_CPU / 64 / 256 * (30 / 1000)
 #define TIMER_COMP_TIME 65000
 #define LED0 (1 << PORTB5)
 #define LED1 (1 << PORTD7)
