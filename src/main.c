@@ -1,7 +1,6 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 
-#define BAUD 9600
 #define TIMER1_COUNT_3_SEC 12  // F_CPU / 64 / TIMER_COMP_TIME * 3
 #define TIMER_COUNT_30_MS 30   // F_CPU / 64 / 256 * (30 / 1000)
 #define TIMER_COMP_TIME 65000
