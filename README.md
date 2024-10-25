@@ -5,16 +5,19 @@ Using the atmega328p timer interrupts, this approach is very fast and performant
 
 # To Install and Compile
 This program is meant to be run on a debian based linux system. To install the dependencies 
-```make install_deps``` 
+```
+make install_deps
+``` 
 This will install the necessary dependencies. It was hard to be sure that I didn't miss any of them, so you may need to install some extra things. 
 
 I also downloaded and manually built the avr gcc toolchain from here: https://www.microchip.com/en-us/tools-resources/develop/microchip-studio/gcc-compilers, but I don't think it was necessary, I think the avr-libc package covers it as well. 
 
 There is already a compiled elf in the repo, but it can be recompiled with
-```make```
+```
+make
+```
 
 # To Run
-run 
 ```
 make run
 ```
