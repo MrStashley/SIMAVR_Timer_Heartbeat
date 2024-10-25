@@ -103,14 +103,13 @@ ISR(TIMER2_OVF_vect) {
 ISR(TIMER1_COMPA_vect){
 	timer1_count++;
 
-	if(led0_count != 0){
+	if(led0_count != 0){ // blink led0 five times
 		setLedOn(LED0);
 		if(++led0_count > 5){
-			led0_count = 0;
+			led0_count = 0; 
 		}
 	}
-	// blink led1
-	setLedOn(LED1);
+	setLedOn(LED1); 	// blink led1
 	if((timer1_count) % TIMER1_COUNT_3_SEC == 0 && led0_count == 0) {
 		// proc every 3 seconds
 		// start led0 procedure
