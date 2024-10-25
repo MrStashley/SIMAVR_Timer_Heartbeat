@@ -8,7 +8,7 @@ This program is meant to be run on a debian based linux system. To install the d
 ```
 make install_deps
 ``` 
-This will install the necessary dependencies. It was hard to be sure that I didn't miss any of them, so you may need to install some extra things, or change the -I cflags in the makefile. If you are seeing missing libc header errors, you probably need to specifiy -I<path to your avr-libc install>  
+This will install the necessary dependencies. It was hard to be sure that I didn't miss any of them, so you may need to install some extra things, or change the `-I` cflags in the makefile. If you are seeing missing libc header errors, you probably need to specifiy `-I<path to your avr-libc install>`  
 
 I also downloaded and manually built the avr gcc toolchain from here: https://www.microchip.com/en-us/tools-resources/develop/microchip-studio/gcc-compilers, but I don't think it was necessary, I think the avr-libc package covers it as well. 
 
