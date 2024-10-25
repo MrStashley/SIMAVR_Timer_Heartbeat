@@ -23,4 +23,6 @@ make run
 ```
 To run the demo. This will run the simulation for 30 seconds, and then open a gtkwave window which will allow you to view a waveform of the activity of 2 of the gpio pins on the atmega328p that are most commonly used to hook up to led's. 
 
+Within gtkwave, click on the menu item labelled "logic" and then double click on "PIN13" and "PIN7" to load them into the window. Then you will also probably have to zoom out with the square - button on the upper window, and use the bottom horizontal scroll to view the waveform. 
+
 Unfortunately, simavr won't update the trace file until after the simulation finishes running, so you can't view the led's in real time. If I had more time I was thinking I would make a mock interface for the gpio pins using uart and then make a little pyQT ui to show the led's blinking, but I figured I shouldn't spend more than the recommended few hours on this challenge. 
